@@ -1,7 +1,22 @@
-# Documentatie Remote Labs API
+# Software Documentatie
+___
 
+In deze fase van de RemoteLabs oplossing Is de primaire functie van de software de 
+studenten de mogelijkheid geven om een microcontroller via het internet te updaten. 
 
-## API refrences 
+![sequentie diagram](img/SoftwareDocumentatie/API_SequentieDiagram.png)
+
+## webapplicatie
+
+De webapplicatie is een MVP dat de studenten toelaat om hun code herhaaldelijk te 
+uploaden op een microcontroller. De webapplicatie is opgebouwd met het Angular 
+framework. 
+
+![sequentie diagram](img/SoftwareDocumentatie/ClassDiagram_Webapp.png)
+
+## API
+
+### API refrences 
 
 | API-referentie-inhoud                |
 |--------------------------------------|
@@ -201,3 +216,49 @@ GET https://domainName/api/upload/firmware/MCU1
     }
 ]
 ```
+## Arduino 
+
+via een template kan een studenten de firmware van een microcontroller updaten via het internet.Om een microcontroller herhaaldelijk te updaten moet er altijd gebruik gemaakt worden van het template.
+
+![sequentie diagram](img/SoftwareDocumentatie/ClassDiagram_Arduino.png)
+
+## Dependencies 
+Om gebruik te maken van het template, moet en de onderste dependencies toegevoegd worden aan de Arduino IDE.
+
+* [analogWrite](https://www.arduino.cc/reference/en/language/functions/analog-io/analogwrite/)
+* [PubSubClient](https://www.arduino.cc/reference/en/libraries/pubsubclient/)
+* [HTTPClient](https://www.arduino.cc/reference/en/libraries/httpclient/)
+* [WiFi](https://www.arduino.cc/en/Reference/WiFi)
+* [WiFiMulti](https://github.com/espressif/arduino-esp32/tree/master/libraries/WiFi/src)
+* [ESP32httpUpdate](https://www.arduino.cc/reference/en/libraries/esp32httpupdate/)
+* [ArduinoJson](https://arduinojson.org/)
+* [LITTLEFS](https://github.com/littlefs-project/littlefs)
+* [WiFi](https://www.arduino.cc/en/Reference/WiFi)
+
+## aanpasingen aanbrengen per microcontroller
+Voordat het template correct gebruikt kan worden moeten er enkele aanpassingen aangebracht worden. Met deze aanpassingen wordt de microcontroller geidentificeerd.
+
++ .ino bestand
+
+![Main](img/ArduinoTemplateDocumentatie/Main_aanpasingen.png)
+
++ header bestand
+
+![Header](img/ArduinoTemplateDocumentatie/Hearder_aanpasingen.png)
+
+## De code omzetten naar een binair bestand
+Om de code te kunnen uploaden in de webapplicatie moet deze omgevormd worden naar een binair bestand.
+
+![Header](img/ArduinoTemplateDocumentatie/ToBinaryFile.png)
+
+
+
+
+
+## Database
+
+Als database gebruiken we een MYSQL relationeel database. Hier wordt de data 
+opgeslagen die de API nodig heeft om de juiste firmware naar de juiste microcontroller 
+te sturen.
+
+![sequentie diagram](img/SoftwareDocumentatie/ERD_Diagram_Database.png)

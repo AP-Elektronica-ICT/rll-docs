@@ -1,5 +1,5 @@
 - [**Inleiding**](inleiding.md)
 - [**OTA Update Strategy**](OTAUpdateStrategy.md)
-- [**API Documentatie**](API_Doc.md)
 - [**Hardware Documentatie**](HardwareDocumentatie.md)
+- [**Software Documentatie**](SoftwareDocumentatie.md)
 - [**Release Plan**](ReleasePlan.md)

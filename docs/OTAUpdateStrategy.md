@@ -1,5 +1,5 @@
 # Over the aire update strategy for remote labs
-
+___
 ## Inleiding
 Het Doel van de RemoteLabs oplossing is studenten een IoT ervaring geven zonder dat ze op 
 de campus aanwezig moeten zijn. Om dit te realiseren moeten we microcontrollers kunnen 
