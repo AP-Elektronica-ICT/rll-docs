@@ -4,7 +4,7 @@ ___
 ### Netwerk
 > Instellen of toegang krijgen toto een draadloos toegangspunt
 
-    Om de microcontrollers binnen het remote labs te kunnen updaten vanuit het internet is toegang tot een wireless accespoint noodzakelijk.  Als er geen bestaand wirelless acesspoint voorhanden is dient er eentje opgezet te worden.
+Om de microcontrollers binnen het remote labs te kunnen updaten vanuit het internet is toegang tot een wireless accespoint noodzakelijk.  Als er geen bestaand wirelless acesspoint voorhanden is dient er eentje opgezet te worden.
 
 ### Smart Tiles
 

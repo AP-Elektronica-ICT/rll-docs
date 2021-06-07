@@ -7,3 +7,4 @@
 - [**Hardware Documentatie**](HardwareDocumentatie.md)
 - [**Software Documentatie**](SoftwareDocumentatie.md)
 - [**Release Plan**](ReleasePlan.md)
+- [**conclusie**](conclusie.md)
