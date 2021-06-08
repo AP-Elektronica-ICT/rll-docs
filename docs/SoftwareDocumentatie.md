@@ -246,13 +246,12 @@ Voordat het template correct gebruikt kan worden moeten er enkele aanpassingen a
 
 ![Header](img/ArduinoTemplateDocumentatie/Hearder_aanpasingen.png)
 
+![Header](img/Handleiding/firmwareVersie.png)
+
 ## De code omzetten naar een binair bestand
 Om de code te kunnen uploaden in de webapplicatie moet deze omgevormd worden naar een binair bestand.
 
-![Header](img/ArduinoTemplateDocumentatie/ToBinaryFile.png)
-
-
-
+![Convert To Binary File](img/ArduinoTemplateDocumentatie/ToBinaryFile.png)
 
 
 ## Database
