@@ -22,8 +22,8 @@ Om de gegevens op te slaan moet er gebruik gemaakt worden van de “arduino-esp3
 
 Binnen de schetsboek locatie moeten de volgende mappen aangemaakt worden.in de tool map worden alle bestanden afkomstig van de reposetory geplaatst.
 
-![Spiff library](/img/ReleasePlan/sketchbook_mapen.png)
-![Spiff library](/img/ReleasePlan/executeFiles.png)
+![sketchbook mappen](/img/ReleasePlan/sketchbook_mapen.png)
+![execute files](/img/ReleasePlan/executeFiles.png)
 
 In de “RemoteLabsArduinoTemplates” repesotory bevindt zich een data map. In de map bevindt zich het “config.txt” bestand, hier zullen de inloggegevens in geplaatst worden.
 De inloggegevens moeten in het onderstaande formaat toegevoegd worden in het bestand.
@@ -33,22 +33,22 @@ De inloggegevens moeten in het onderstaande formaat toegevoegd worden in het bes
     ```
 Om de gegevens op de microcontroller te plaatsen druk je op data uploaden on der hulpbiddelen. 
 
-![Spiff library](/img/ReleasePlan/IDE_SketchDataUpload.png)
-![Spiff library](/img/ReleasePlan/FileSystem.png)
+![Uploaden](/img/ReleasePlan/IDE_SketchDataUpload.png)
+![explorer](/img/ReleasePlan/FileSystem.png)
 
 Om te controleren of de gegevens correct zijn opgeslagen kan het “wifiConfig.ino” bestand op de microcontroller geprogrammeerd worden.
 
-![Spiff library](/img/ReleasePlan/WifiConfig_Repo.png)
+![wifi config repository](/img/ReleasePlan/WifiConfig_Repo.png)
 
 In de serieel monitor kan je controleren of de microcontroller verbonden is met het netwerk.
 
-![Spiff library](/img/ReleasePlan/WifiConfig_IP.png)
+![wifi config IP](/img/ReleasePlan/WifiConfig_IP.png)
 
 Als deze gegevens correct uitgelezen kunnen worden betekent dit dat ze in het geheugen zijn opgeslagen en bruikbaar zijn in eigen geschreven code.
 
 > Microcontroller Template
 
-Om de microcontroller te kunnen programmeren moeten studenten gebruik maken van een template. Het template kan gevonden worden in de ["RemoteLabsArduinoTemplates"](/img/ReleasePlan/WifiConfig_IP.png) reposetory.
+Om de microcontroller te kunnen programmeren moeten studenten gebruik maken van een template. Het template kan gevonden worden in de ["RemoteLabsArduinoTemplates"](https://github.com/glcr/RemoteLabsArduinoTemplates) reposetory.
 
 Daarom moeten alle in het labo gebruikte microcontrollers voorzien worden van een template welke aangebracht kunnen worden via een fysieke seriële connectie.  Eens deze template succesvol is aangebracht kunnen studenten via het internet de microcontroller OTA-updaten. 
 
@@ -68,7 +68,7 @@ Na het doorlopen van de bovenstaande stappen kunnen de Smart Tiles gebruikt word
 ### RemoteLabs
 > Microcontroller Template
 
-Om de microcontroller te kunnen programmeren moeten studenten gebruik maken van een template. Het template kan gevonden worden in de ["RemoteLabsArduinoTemplates"](/img/ReleasePlan/WifiConfig_IP.png) reposetory.
+Om de microcontroller te kunnen programmeren moeten studenten gebruik maken van een template. Het template kan gevonden worden in de ["RemoteLabsArduinoTemplates"](https://github.com/glcr/RemoteLabsArduinoTemplates) reposetory.
 
 Daarom moeten alle in het labo gebruikte microcontrollers voorzien worden van een template welke aangebracht kunnen worden via een fysieke seriële connectie.  Eens deze template succesvol is aangebracht kunnen studenten via het internet de microcontroller OTA-updaten.
 

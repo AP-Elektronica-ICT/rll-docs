@@ -156,7 +156,13 @@ bij de apparaten bij OTA-drive. Ik heb hier geen oplossing voor gevonden omdat e
 buiten de documentatie van OTA zelf niet veel informatie is te vinden over deze 
 technologie.
 
-### Zelf opgebouwde code 
+## ESP-IDF
+Bij deze technologie maken we gebruik van een framework. Dit framework beschikt over enkele functionaliteiten die OTA updaten mogelijk zouden maken.Eerst moet het framework geïnstalleerd worden op de studenten hun computers. Dit zal een link geven naar de juiste directory waar het framework is geïnstalleerd, Dit opent in een powershell terminal. In het framework staat er een simpel OTA-voorbeeld. De instructies voor dit voorbeeld zijn terug te vinden op GitHub [GitHub](https://github.com/espressif/esp-idf/tree/master/examples/system/ota). Binnen de configuratie van het framework moet het SSID en het passwoord van het netwerk waar de microcontroller zal mee connecteren moeten ingegeven worden. Dit is niet een veilige optie omdat binnen de Remote labs oplossing deze gevoelige informatie te veel verspied moet worden. Als alles geconfigureerd is moet de voordbeeld code fysiek geprogrammeerd Worden. De eerste maal dat de firmware werd geprogrammeerd deer er zich een error voor, deze error is opgelost met het behulp van een form [post](https://www.reddit.com/r/esp8266/comments/hccasu/i_am_getting_esptoolfatalerror_failed_to_write/) is dit probleem opgelost kunnen worde. En is de firmware op de microcontroller geprogrammeerd. Het probleem dat er nu voorkwam was dat de microcontroller niet wouw connecteren met het netwerk. Het bleef zichzelf connecteren en de connecteren van het netwerk. 
+Met deze methode heb ik geen succesvolle programmatie kunnen uitvoeren over OTA. 
+
+
+### Zelf opgebouwde code
+
 Omdat de methoden die ik tot hiertoe niet werkte voor de toepassing waar we ze 
 willen voor gebruiken, ben ik opzoek gegaan naar een manier waarop we code 
 kunnen doorsturen via een zelfgemaakte API. Tijdens mijn onderzoek hiernaartoe 
@@ -167,7 +173,8 @@ dat op het geheugen van de server staat en één voor het controleren van de
 firmware versie die op een database is gezet.
 Voor de microcontroller is er voordbeeld code voorzien. Deze code bestaat uit twee 
 delen, om de werking te bevestigen gaan ze de code uitlezen en deel twee is om de 
-OTA te initialiseren. 
+OTA te initialiseren.
+
 De microcontroller wordt eerst verbonden met een netwerk op dezelfde manier als 
 in de vorige methodes. Wanneer de code opstart wordt de netwerk connectie 
 gecontroleerd. Als de controller een succesvolle connectie heeft kunnen maken, zal 

@@ -13,21 +13,21 @@ verschil tussen de twee tegels is dat de Central Tile verbonden wordt met de voe
 De Smart Tile is een houten doos met vinger verbindingen. Deze doos zal gemaakt 
 worden met behulp van een lasercutter. 
 
-![OTA_IP](img/HardwareDocumentatie/SmartTile/SmartTile.png)
+![Smart Tile](img/HardwareDocumentatie/SmartTile/SmartTile.png)
 
 #### afmetingen
 
 > Smart Tile Onderkant 
 
-![OTA_IP](img/HardwareDocumentatie/SmartTile/SmartTile_bottm.png)
+![Smart Tile onderkant](img/HardwareDocumentatie/SmartTile/SmartTile_bottm.png)
 
 > Smart Tile voor & achterzijde 
 
-![OTA_IP](img/HardwareDocumentatie/SmartTile/SmartTile_SideA.png)
+![Smart Tile voor&achterzijde](img/HardwareDocumentatie/SmartTile/SmartTile_SideA.png)
 
 > Smart Tile Linker & Rechterzijde 
 
-![OTA_IP](img/HardwareDocumentatie/SmartTile/SmartTile_SideB.png)
+![Smart Tile Linker&Rechterzijde](img/HardwareDocumentatie/SmartTile/SmartTile_SideB.png)
 
 
 De bovenzijde van de Smart Tile is een houten plaat waarop een wegdek in gegraveerd 
@@ -36,7 +36,7 @@ tegel.
 
 > Smart Tile Top onderkant 
 
-![OTA_IP](img/HardwareDocumentatie/SmartTile/SmartTileTop.png)
+![Smart Tile TOP onderkant](img/HardwareDocumentatie/SmartTile/SmartTileTop.png)
 
 Op dit moment bestaat het systeem uit verschillende graveringen die samengesteld 
 worden. In de toekomst kunnen er altijd graveringen worden toegevoegd om andere 
@@ -44,27 +44,27 @@ configuraties op te bouwen.
 
 > Smart Tile bovenaanzicht 1
 
-![OTA_IP](img/HardwareDocumentatie/SmartTile/SmartTileTopGravering_Tile1.png)
+![gravering 1](img/HardwareDocumentatie/SmartTile/SmartTileTopGravering_Tile1.png)
 
 > Smart Tile bovenaanzicht 2
 
-![OTA_IP](img/HardwareDocumentatie/SmartTile/SmartTileTopGravering_Tile2.png)
+![gravering 2](img/HardwareDocumentatie/SmartTile/SmartTileTopGravering_Tile2.png)
 
 > Smart Tile bovenaanzicht 3
 
-![OTA_IP](img/HardwareDocumentatie/SmartTile/SmartTileTopGravering_Tile3.png)
+![gravering 3](img/HardwareDocumentatie/SmartTile/SmartTileTopGravering_Tile3.png)
 
 De verschillende tegels zullen tegen elkaar geplaatst worden en verbonden door de 
 magnetische connectoren. 
 
-![OTA_IP](img/HardwareDocumentatie/SmartTile/SmartTileSysyem.png)
+![Smart Tile's system](img/HardwareDocumentatie/SmartTile/SmartTileSysyem.png)
 
 De magnetische connector zal voeding en een I²C verbinding doorgeven tussen de 
 verschillende tegels. Aan alle zijde van de Expension Tiles zullen deze connectoren 
 geplaatst worden. De Central Tile zal op drie van zijn zijde ook voorzien worden van 
 deze connector. 
 
-![OTA_IP](img/HardwareDocumentatie/SmartTile/MillMax-PR688_450X300.jpg)
+![magnetiche connector](img/HardwareDocumentatie/SmartTile/MillMax-PR688_450X300.jpg)
 
 #### PCB
 ##### USB-C Power Delivery (PD)
@@ -74,11 +74,11 @@ bekijken hoeveel spanning en stroom het systeem nodig heeft en zal dit leveren.
 
 > elektrich schema
 
-![OTA_IP](img/HardwareDocumentatie/SmartTile_PCBS/USBCPD_schema.png)
+![elektrich schema](img/HardwareDocumentatie/SmartTile_PCBS/USBCPD_schema.png)
 
 > PCB
 
-![OTA_IP](img/HardwareDocumentatie/SmartTile_PCBS/USBCPD_PCB.png)
+![PCB](img/HardwareDocumentatie/SmartTile_PCBS/USBCPD_PCB.png)
 
 
 ##### Smart Tile PCB
@@ -90,11 +90,11 @@ verschillende sensoren/ actuatoren op gemonteerd worden.
 
 > elektrich schema
 
-![OTA_IP](img/HardwareDocumentatie/SmartTile_PCBS/SmartTile_Schema.png)
+![elektrich schema](img/HardwareDocumentatie/SmartTile_PCBS/SmartTile_Schema.png)
 
 > PCB
 
-![OTA_IP](img/HardwareDocumentatie/SmartTile_PCBS/SmartTile_PCB.png)
+![PCB](img/HardwareDocumentatie/SmartTile_PCBS/SmartTile_PCB.png)
 
 Voor beide PCB’s is er een Houder 3D geprint. Zo kunnen de PCB’s in de tegels 
 gemonteerd worden.
@@ -103,11 +103,11 @@ gemonteerd worden.
 
 > Smart Tile PCB Houder
 
-![OTA_IP](img/HardwareDocumentatie/SmartTile_PCBS/SmartTileHouder/SmartTile_PCB_Houder_v8.png)
+![Smart Tile PCB Houder](img/HardwareDocumentatie/SmartTile_PCBS/SmartTileHouder/SmartTile_PCB_Houder_v8.png)
 
 > USB-C PD PCB Houder
 
-![OTA_IP](img/HardwareDocumentatie/SmartTile_PCBS/SmartTileHouder/SmartTile_PCB_Houder_v9.png)
+![USB-C PD PCB Houder](img/HardwareDocumentatie/SmartTile_PCBS/SmartTileHouder/SmartTile_PCB_Houder_v9.png)
 
 ## Robot Platform
 
@@ -122,7 +122,7 @@ labo’s ontworpen worden.
 
 Het Robotplatform bestaat uit twee delen een motor laag en een sensor laag. Op de motor laag worden de motoren en de batterij gemonteerd. Op de sensor laag worden de sensoren/actuatoren gemonteerd,er kunnen verschillende sensor lagen op elkaar gemonteerd.
 
-![RobotPlatform](img/HardwareDocumentatie/RobotPlatform/Robot_platform_lagen.png)
+![RobotPlatform lagen](img/HardwareDocumentatie/RobotPlatform/Robot_platform_lagen.png)
 
 > Motor laag
 
@@ -149,11 +149,11 @@ zijn vier PWM compatible GPIO pinnen verbonden met de PWM poorten van de H-brug.
 
 > elektrich schema
 
-![OTA_IP](img/HardwareDocumentatie/RobotPlatform_PCB/RobotPlatform_Schema.png)
+![elektrich schema](img/HardwareDocumentatie/RobotPlatform_PCB/RobotPlatform_Schema.png)
 
 > PCB
 
-![OTA_IP](img/HardwareDocumentatie/RobotPlatform_PCB/RobotPlatform_PCB.png)
+![PCB](img/HardwareDocumentatie/RobotPlatform_PCB/RobotPlatform_PCB.png)
 
 #### 3D componenten 
 
