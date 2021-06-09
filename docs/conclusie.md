@@ -19,13 +19,18 @@ Bij het testen van de sensoren/actuatoren is er waargenomen dat bij het combiner
 
 Door het onbreken van van bepaalde hardware componenten zijn deze componenten nog niet getest.
 
->PCB USB-C Power Delivery (PD)
+> PCB USB-C Power Delivery (PD)
 
 Door Het onbreken van de USB porwer controller is deze PCB nog niet getest kunnen worden.
 
->Magnetiche connectoren
+> Magnetiche connectoren
 
 Door Het onbreken van de magnetiche connectoren is er nog geen houder ontworpen. Bij het ontwerpen van deze houder moet er rekening gehouden worden dat deze voorzien moet worden van magneten. zo kunnnen de tegels onderling met elkaar verbonden kunnen worden.
+
+> Sensoren/actuatoren
+
+Als in verdere fase van de oplossing de studenten een visuele feedback hebben zouden er leds gebruikt worden met een hogere lumen.
+Door de demo te filmen is er ondervonden dat normale led's slecht zichtbaar zijn op video.
 
 ### Robotplatform
 
