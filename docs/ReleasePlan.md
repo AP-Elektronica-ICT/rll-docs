@@ -31,7 +31,7 @@ De inloggegevens moeten in het onderstaande formaat toegevoegd worden in het bes
     ```
     SSID,PASSWORD
     ```
-Om de gegevens op de microcontroller te plaatsen druk je op data uploaden on der hulpbiddelen. 
+Om de gegevens op de microcontroller te plaatsen druk je op data uploaden on der hulpmiddelen. 
 
 ![Uploaden](/img/ReleasePlan/IDE_SketchDataUpload.png)
 ![explorer](/img/ReleasePlan/FileSystem.png)

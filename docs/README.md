@@ -8,5 +8,6 @@
 - [**Software Documentatie**](SoftwareDocumentatie.md)
 - [**Release Plan**](ReleasePlan.md)
 - [**Handleiding voor studenten**](Studenten_Handleiding.md)
+- [**Handleiding voor docenten**](Docenten_Handleiding.md)
 - [**Test case**](TestCase.md)
 - [**conclusie**](conclusie.md)

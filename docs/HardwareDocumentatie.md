@@ -13,7 +13,7 @@ verschil tussen de twee tegels is dat de Central Tile verbonden wordt met de voe
 De Smart Tile is een houten doos met vinger verbindingen. Deze doos zal gemaakt 
 worden met behulp van een lasercutter. 
 
-![Smart Tile](img/HardwareDocumentatie/SmartTile/SmartTile.png)
+![Smart Tile](img/HardwareDocumentatie/SmartTile/SmartTile_v38.png)
 
 #### afmetingen
 
