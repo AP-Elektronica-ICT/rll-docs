@@ -145,7 +145,7 @@ De H-brug wordt direct gevoed door de batterij omdat de nominale spanning van de
 motoren gelijk is met deze van de batterij. Om de snelheid van de motoren te regelen 
 zijn vier PWM compatible GPIO pinnen verbonden met de PWM poorten van de H-brug.
 
-#### PCB
+
 
 > elektrich schema
 

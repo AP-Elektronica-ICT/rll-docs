@@ -13,6 +13,7 @@ de studenten de microcontroller zijn firmware via het internet kunnen updaten.
 Ik ben begonnen met het een aantal microncontrollers op te zoeken die een ingebouwde wifi 
 module hebben. Ik heb specifiek gekozen voor een ingebouwde wifi module omdat dit 
 handiger is voor montage.
+
 Bij de microcontrollers die ik heb onderzocht sprong de ESP32 eruit. Deze microcontroller 
 beschikt niet enkel over een wifi module maar ook deze draadloze module bevat ook een 
 bluetooth mogelijkheid. Met deze extra technologie kunnen de docenten een groter bereik
@@ -22,10 +23,11 @@ flexibiliteit bij het ontwerpen van de labo’s.
 Een voordeel van deze microcontroller is ook dat er veel documentatie beschikbaar is en dat 
 er een groot aantal compatible bibliotheken beschikbaar zijn. Met de beschikbaarheid van 
 deze labo’s is het mogelijk om de firmware van de microcontroller te updaten via het 
-internet. 
+internet.
+
 Het enige probleem dat ik had met de ESP32 was dat tijdens het programmeren de boot 
 knop moest ingedrukt worden om correct te programmeren. Dit was snel opgelost door een 
-condensator tussen de ground en de enable pin van de controller. De controller wordt ook in 
+condensator te plaatsen tussen de ground en de enable pin van de controller. De controller wordt ook in 
 het project op een pcb geplaatst dus is het hier geen probleem. 
 Met het behulp van deze microcontroller zullen de studenten via het internet zijn firmware 
 kunnen updaten en zo de remote labo’s kunnen uitvoeren.
@@ -34,7 +36,7 @@ kunnen updaten en zo de remote labo’s kunnen uitvoeren.
 ### Arduino OTA
 De Arduino foundation heeft een [bibliotheek](https://www.arduino.cc/reference/en/libraries/arduinoota/) de erbij helpt om arduino compatible 
 microcontrollers te programmeren over een wifi verbinding. Om deze bibliotheek te 
-kunnen gebruiken moet python op je computer hebben geïnstalleerd.
+kunnen gebruiken moet python op je computer geïnstalleerd zijn.
 Voordat je je code over the air kan uploaden naar de microcontroller. Als je de 
 arduino IDE gebruikt kan je via file -> examples -> ArduinoOTA -> BasicOTA de 
 voorbeeld code vinden. Deze voordbeeld code moet eerst op de microcontroller in 
@@ -108,13 +110,13 @@ opnieuw moeten doen.
 
 OTA-drive is een tool die je toelaat verschillende IoT apparaten te updaten via het 
 internet. Het deze tool kan je ook de firmware versie van de microcontroller 
-aanpassen.
-Voor deze methode moet je eerst een account aanmaken bij otadrive.com. Wanneer 
+aanpassen. Voor deze methode moet je eerst een account aanmaken bij otadrive.com. Wanneer 
 je een account hebt aangemaakt log je in. Als je ingelogd bent ga je naar de 
 “products” pagina hier maak je een nieuw product aan. Bij Het nieuwe product staat 
 een knop met een mapje, hier moet je op drukken. Via deze knop kom je op de 
 product overview pagina, hier kan je de API key vinden die je nodig gaat hebben voor 
-de voordbeeld code. 
+de voordbeeld code.
+
 De voordbeeld code die je eerst moet uploaden voordat je via OTA kan updaten vind 
 je op de documentatie [documentatie](https://otadrive.com/doc/) pagina van OTA-drive. In de voordbeeldcode moet je de API
 key aanpassen naar je eigen key. Als dit gebeurt moet je de code fysiek uploaden op 
@@ -157,8 +159,9 @@ buiten de documentatie van OTA zelf niet veel informatie is te vinden over deze
 technologie.
 
 ## ESP-IDF
-Bij deze technologie maken we gebruik van een framework. Dit framework beschikt over enkele functionaliteiten die OTA updaten mogelijk zouden maken.Eerst moet het framework geïnstalleerd worden op de studenten hun computers. Dit zal een link geven naar de juiste directory waar het framework is geïnstalleerd, Dit opent in een powershell terminal. In het framework staat er een simpel OTA-voorbeeld. De instructies voor dit voorbeeld zijn terug te vinden op GitHub [GitHub](https://github.com/espressif/esp-idf/tree/master/examples/system/ota). Binnen de configuratie van het framework moet het SSID en het passwoord van het netwerk waar de microcontroller zal mee connecteren moeten ingegeven worden. Dit is niet een veilige optie omdat binnen de Remote labs oplossing deze gevoelige informatie te veel verspied moet worden. Als alles geconfigureerd is moet de voordbeeld code fysiek geprogrammeerd Worden. De eerste maal dat de firmware werd geprogrammeerd deer er zich een error voor, deze error is opgelost met het behulp van een form [post](https://www.reddit.com/r/esp8266/comments/hccasu/i_am_getting_esptoolfatalerror_failed_to_write/) is dit probleem opgelost kunnen worde. En is de firmware op de microcontroller geprogrammeerd. Het probleem dat er nu voorkwam was dat de microcontroller niet wouw connecteren met het netwerk. Het bleef zichzelf connecteren en de connecteren van het netwerk. 
-Met deze methode heb ik geen succesvolle programmatie kunnen uitvoeren over OTA. 
+Bij deze technologie maken we gebruik van een framework. Dit framework beschikt over enkele functionaliteiten die OTA updaten mogelijk zouden maken.Eerst moet het framework geïnstalleerd worden op de studenten hun computers. Dit zal een link geven naar de juiste directory waar het framework is geïnstalleerd, Dit opent in een powershell terminal. In het framework staat er een simpel OTA-voorbeeld. De instructies voor dit voorbeeld zijn terug te vinden op GitHub [GitHub](https://github.com/espressif/esp-idf/tree/master/examples/system/ota). 
+
+Binnen de configuratie van het framework moet het SSID en het passwoord van het netwerk waar de microcontroller zal mee connecteren moeten ingegeven worden. Dit is niet een veilige optie omdat binnen de Remote labs oplossing deze gevoelige informatie te veel verspied moet worden. Als alles geconfigureerd is moet de voordbeeld code fysiek geprogrammeerd Worden. De eerste maal dat de firmware werd geprogrammeerd deer er zich een error voor, deze error is opgelost met het behulp van een form [post](https://www.reddit.com/r/esp8266/comments/hccasu/i_am_getting_esptoolfatalerror_failed_to_write/) is dit probleem opgelost kunnen worde. En is de firmware op de microcontroller geprogrammeerd. Het probleem dat er nu voorkwam was dat de microcontroller niet wouw connecteren met het netwerk. Het bleef zichzelf connecteren en de connecteren van het netwerk. Met deze methode heb ik geen succesvolle programmatie kunnen uitvoeren over OTA. 
 
 
 ### Zelf opgebouwde code
@@ -202,6 +205,7 @@ doen naar de API die de beschikbare firmware versie opgeeft.
 Bij dit onderzoek heb ik als conclusie gesteld dat om een herhaaldelijke OTA-update
 mogelijk te maken, zal er voor de studenten een template voorzien moeten worden. 
 Dit template zal ervoor zorgen dat er gecontroleerd kan worden of er een nieuwere 
-firmware versie beschikbaar is. Voor Het opgeven van het passwoord en SSID van het 
-netwerk, kan er bij initiele setup een config bestand op de controller opslaan met 
-behulp van SPIFFS.
+firmware versie beschikbaar is. 
+
+Voor Het opgeven van het passwoord en SSID van het netwerk, kan er bij initiele setup een 
+config bestand op de controller opslaan met behulp van SPIFFS.

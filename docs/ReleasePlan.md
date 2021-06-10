@@ -10,7 +10,7 @@ Om de microcontrollers binnen het remote labs te kunnen updaten vanuit het inter
 
 > wifi-inloggegevens opslaan op de microcontroller
 
-Alle in het labo gebruikte microcontrollers dienen voorzien te worden van wifi-inloggegevens.  Deze gegevens worden in het geheugen van de microcontroller aangebracht in de vorm van een “wifiConfig.ino” bestand en een “config.txt” bestand.
+Alle in het labo gebruikte microcontrollers dienen voorzien te worden van wifi-inloggegevens. Deze gegevens worden in het geheugen van de microcontroller aangebracht in de vorm van een “wifiConfig.ino” bestand en een “config.txt” bestand.
 
 De inloggegevens worden opgeslagen in het SPIFF-geheugen van de microcontroller. Om het gebruik te kunnen maken van het SPIFF-geheugen moet de LittleFD bibliotheek geïnstalleerd worden. Onder het bibliotheek beheer in de Arduino IDE kun je de “LittleFS_esp32” bibliotheek instaleren.
 
@@ -20,7 +20,7 @@ Om de gegevens op te slaan moet er gebruik gemaakt worden van de “arduino-esp3
 
 ![Arduino sketchbook location](/img/ReleasePlan/SketchbookLokatie.png)
 
-Binnen de schetsboek locatie moeten de volgende mappen aangemaakt worden.in de tool map worden alle bestanden afkomstig van de reposetory geplaatst.
+Binnen de schetsboek locatie moeten de volgende mappen aangemaakt worden.in de tool map worden alle bestanden afkomstig van deze [reposetory](https://github.com/lorol/arduino-esp32littlefs-plugin) in de mappen geplaatst.
 
 ![sketchbook mappen](/img/ReleasePlan/sketchbook_mapen.png)
 ![execute files](/img/ReleasePlan/executeFiles.png)
@@ -128,10 +128,10 @@ Voordat we dit bestand kunnen importeren moeten er enkele stappen doorlopen word
     GRANT ALL PRIVILEGES ON * . * TO 'newuser'@'localhost';
     FLUSH PRIVILEGES;
     Exit;
-    ```
+```
 
     Met de nieuwe gebruiker gaan we de database importeren. 
-    ```
+```
     Mysql -u 'newuser' -p
     CREATE DATABASE remote_labs;
     Exit;
@@ -187,7 +187,7 @@ De pipeline zal uitgevoerd worden wanneer deze een webhook ontvangt van GitHub. 
 
 Om de Webapplicatie en de API te deployen kies je voor “voer shell-script uit” en doorloop je onderstaande stappen.  Daarna kan je het item opslaan.
 
-    ```
+```
     cd RemoteLabsAPI
     npm install
     sudo pm2 stop all
@@ -201,7 +201,7 @@ Om de Webapplicatie en de API te deployen kies je voor “voer shell-script uit�
     ng build --prod --base-href=/app/
     rm -r /var/www/html/
     cp -a /dist/. /var/www/html/
-    ```
+```
 > GitHub Webhook aanmaken
 
 Op GitHub navigeer je naar de “settings” pagina.
@@ -233,7 +233,7 @@ Om De RemoteLabs Labo’s te ontwerpen wordt gebruik gemaakt van Node-Red. Hierm
 
 > Docker en Docker-compose installeren
 
-Om Docker te installeren op de rasspberry pi kan je de volgende [tutorial](https://devdojo.com/bobbyiliev/how-to-install-docker-and-docker-compose-on-raspberry-pi)volgen.
+Om Docker te installeren op de rasspberry pi kan je de volgende [tutorial](https://devdojo.com/bobbyiliev/how-to-install-docker-and-docker-compose-on-raspberry-pi) volgen.
 
 > Mossquito installeren.
 

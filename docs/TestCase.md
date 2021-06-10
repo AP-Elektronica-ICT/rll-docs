@@ -135,11 +135,13 @@ https://glhobelab.be/node6
 
 * Dit doe je met het behulp van de encoders op de motoren. Om de afstand te berekenen kun je gebruik maken van onderstaande formule
 
+```
 ((2*pi*R)/N)*pos	
+```
 
-N = aantal stappen de Rotary encoder aflegt  per 360° = 1096 
-R = de radius van een wiel  = 4.5 cm
-Pos = het aantal stappen van de Rotary encoder 
+* N = aantal stappen de Rotary encoder aflegt  per 360° = 1096 
+* R = de radius van een wiel  = 4.5 cm
+* Pos = het aantal stappen van de Rotary encoder 
 
 ### Team 1 : Stap 1
 
@@ -229,7 +231,7 @@ Pos = het aantal stappen van de Rotary encoder
 
  ### Team 2 : Stap 1
 
-![State 1](img/HardwareDocumentatie/TestCase/T1S1.png)
+![State 1](img/HardwareDocumentatie/TestCase/T2S1.png)
 
 * Team 2 begint op het rechter rijvak van Tile 3 met de neus naar Tile 6.
 
