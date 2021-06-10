@@ -42,4 +42,9 @@ Voor de motoren moeten er moeren voorzien worden zodat de motoren steviger in de
 
 >PCB
 
-De huidige PCB bevat nog enkele problemen die de werking van de PCB in gedrang brengt. Pin 8 van de H-brug is niet verbonden  met VCC, Dit probleem is opgelost in alle schemas en de gerber files. Het tweede probleem in de PCB is dat de spanningsregelaar aan zijn uitgang geen stabiele spanning levert. De spanning aan de uitgang start op vijf volt en verlaagt tot nul volt. Dit porbleem heb ik niet kunnen oplossen.
+De huidige PCB bevat nog enkele problemen die de werking van de PCB in gedrang brengt. Pin 8 van de H-brug is niet verbonden  met VCC, Dit probleem is opgelost in alle schemas en de gerber files. Het tweede probleem in de PCB is dat de spanningsregelaar aan zijn uitgang geen stabiele spanning levert. De spanning aan de uitgang start op vijf volt en verlaagt tot nul volt. 
+
+Bij het controleren van alle verbindingen heb ik ondervonden dat bepaalde pads op de toplaag in het schema verbonden zijn met de ground. In realiteit zijn deze niet verbonden met de ground. ik weet dit of dit het specifieke probleem is maar dit kan wel een van de redenen zij.
+
+Dit porbleem heb ik niet kunnen oplossen.
+
