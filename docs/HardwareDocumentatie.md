@@ -13,7 +13,7 @@ verschil tussen de twee tegels is dat de Central Tile verbonden wordt met de voe
 De Smart Tile is een houten doos met vinger verbindingen. Deze doos zal gemaakt 
 worden met behulp van een lasercutter. 
 
-![Smart Tile](img/HardwareDocumentatie/SmartTile/SmartTile_v38.png)
+![Smart Tile](img/HardwareDocumentatie/SmartTile/Smart_TileV45.png)
 
 #### afmetingen
 
@@ -57,7 +57,7 @@ configuraties op te bouwen.
 De verschillende tegels zullen tegen elkaar geplaatst worden en verbonden door de 
 magnetische connectoren. 
 
-![Smart Tile's system](img/HardwareDocumentatie/SmartTile/SmartTileSysyem.png)
+![Smart Tile's system](img/HardwareDocumentatie/SmartTile/SmartTileSysyem_v8.png)
 
 De magnetische connector zal voeding en een I²C verbinding doorgeven tussen de 
 verschillende tegels. Aan alle zijde van de Expension Tiles zullen deze connectoren 
